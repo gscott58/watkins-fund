@@ -11,7 +11,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /* Set text font size */
 .siteheader {
 	font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
-	font-size: 22px;
+	font-size: 24px;
+}
+.bottom-right {	
+	font-size: 10px;                  /* smaller font size */
 }
 
 .siteheader {
@@ -131,7 +134,7 @@ footer {
 	clear: left;
 	margin-top: 10px;
 	font-family: 'Lato', sans-serif;  /* use Lato Font for footer section too */
-	font-size: 14px;                  /* smaller font size */
+	font-size: 10px;                  /* smaller font size */
 	text-align: center;               /* centered too */
 }
 /*--------------------------------------------------------*/
