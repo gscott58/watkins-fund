@@ -6,32 +6,27 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /*----------------------------------------------------------*/
 /*- top-left, top-right, center, bottom-left, bottom-right -*/
 /*----------------------------------------------------------*/
-/*- Container holding the image and the text follows       -*/
-/*----------------------------------------------------------*/
 /* Set text font size */
 .body {
-	font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
-	font-size:     1.25em;
     margin-top:    10px;
     margin-botton: 10px;
     margin-left:   10px;
     margin-right:  10px;
 }
 .siteheader {
-	font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
+    font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
 	font-size:     1.25em;
+    color: #f9f9f9;
+    
     margin-top:    10px;
     margin-botton: 10px;
     margin-left:   10px;
     margin-right:  10px;
 }
-.bottom-right {	
-	font-size: 10px;                  /* smaller font size */
-}
+
 .siteheader {
     position: relative;
     text-align: center;
-    color: #f9f9f9;
 }
 
 /* Bottom left text */
@@ -63,6 +58,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     color: white;
 }
 
+.bottom-right {	
+	font-size: 10px;                  /* override smaller font size */
+}
+
 /* Centered text */
 .centered {
     position: absolute;
@@ -73,7 +72,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /*------------------------------------------*/
 /*- CSS to place text on an image - (Ends) -*/
 /*------------------------------------------*/
-
 #body {
 	height:        auto;
 	margin: 	   10px;
@@ -87,13 +85,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 	
 }
 main {
-	margin-left: 10px;
-	margin-right: 10px;
-	background-color: #e9e9e9;
-	color: #222;
-	font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
+    font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
 	font-size: 18px;
- 
+    color: #222;
+    background-color: #e9e9e9;    
+    
+	margin-left:  10px;
+	margin-right: 10px;
+    margin-top:  10px;
+	margin-bottom: 10px;
 }
 main ul li {
 	margin-bottom: 5px;   /* increase spacing between unordered list items */ 
@@ -134,131 +134,33 @@ p {
 }
 
 #youtube-caption {
-/*	float: left; */
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+    
 	margin-top:	    10px;
 	margin-bottom: 10px;
 	padding-left:  25px;
-	font-family: 'Lato', sans-serif;
-	font-size: 18px;
 }
 footer {
 	clear: left;
-	margin-top: 10px;
-	font-family: 'Lato', sans-serif;  /* use Lato Font for footer section too */
+    font-family: 'Lato', sans-serif;  /* use Lato Font for footer section too */
 	font-size: 10px;                  /* smaller font size */
+    
+	margin-top: 10px;
 	text-align: center;               /* centered too */
 }
-/*--------------------------------------------------------*/
-/*- Mobile-First: Mobile Users Get Vertical Stacked Menu -*/
-/*--------------------------------------------------------*/  
-/* remove bullets, margins, and padding from nav unordered list */
-nav {
-		clear: left;
-		margin-top: 10px;
-		margin-left: 10px;
+/*-----------------------------------------------------*/
+/*-    Accommodations for Devices 480px and Greater   -*/
+/*-----------------------------------------------------*/
+@media only screen and (min-width: 480px) {
+
+    .siteheader {
+        font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
+        font-size:     2em;
+    }
+
 }
-nav ul {
-    list-style-type: none;
-    margin:		0px;
-    padding:	0px;
-}
-
-/* remove underline from nav unordered list links <a> */
-nav ul li a {
-    text-decoration: none;
-}
-
-/* style <a> elements inside nav unordered list, make entire link area clickable (not just the text) */
-nav ul li a {
-    display: block;
-    width: 60px;
-}
-
-/* set width of nav <ul>, and remove the width of <a>, as they <a> will take up full width of <ul> when displayed as block element */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 60px;
-} 
-
-/* Create a basic vertical stacked nav bar (with gray background) and change background color of links when user hovers over them*/
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-		width: 92px;
-		background-color: #333;
-}
-
-nav ul li a {
-    display: block;
-/*  color: #000; */
-		color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color on hover */
-nav ul li a:hover {
-    background-color: #555;
-}
-
-/* Add an "active" class to the current link to let the user know which page he/she is on */
-.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-/* Center Links & Add Borders */
-nav ul {
-    border: 1px solid #555;
-}
-
-nav ul li {
-    text-align: center;
-    border-bottom: 1px solid #555;
-}
-
-nav ul li:last-child {
-    border-bottom: none;
-}
-/*------------------------------------*/
-/*- This Concludes Mobile-First Menu -*/
-/*------------------------------------*/  
-
-	@media only screen and (min-width: 480px) {
-/*----------------------------------------------------------------------------*/
-/*- If Not Mobile User: Transform Vertical Stacked Menu Into Horizontal Menu -*/
-/*----------------------------------------------------------------------------*/
-		nav ul {
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-				width: 276px;
-/*			width: 368px;  */
-				overflow: hidden;
-				background-color: #333;
-		}
-
-		nav ul li {
-				float: left;
-		}
-		
-		nav ul li a {
-				display: block;
-				color: white;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-		}
-
-		/* Change the link color to #111 (black) on hover */
-		nav ul li a:hover {
-				background-color: #111;
-		}
-	}
-/*-----------------------------------*/
-/*- End Transform CSS Vertical Menu -*/
-/*-----------------------------------*/
+/*-----------------------------------------*/
+/*- End Accommodations for Laeger Devices -*/
+/*-----------------------------------------*/
 
