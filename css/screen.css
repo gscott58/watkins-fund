@@ -9,9 +9,21 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /*- Container holding the image and the text follows       -*/
 /*----------------------------------------------------------*/
 /* Set text font size */
+.body {
+	font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
+	font-size:     1.25em;
+    margin-top:    10px;
+    margin-botton: 10px;
+    margin-left:   10px;
+    margin-right:  10px;
+}
 .siteheader {
 	font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
-	font-size: 1.25em;
+	font-size:     1.25em;
+    margin-top:    10px;
+    margin-botton: 10px;
+    margin-left:   10px;
+    margin-right:  10px;
 }
 .bottom-right {	
 	font-size: 10px;                  /* smaller font size */
@@ -19,7 +31,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .siteheader {
     position: relative;
     text-align: center;
-    color: #e6e6e6;
+    color: #f9f9f9;
 }
 
 /* Bottom left text */
@@ -111,7 +123,7 @@ p {
 	margin-left: 10px;
 }
 #youtube {
-	width:         95%;
+	width:         50%;
 	height:        30%;
 	margin-top:    10px;
 	margin-bottom: 10px;
