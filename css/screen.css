@@ -6,18 +6,28 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /*----------------------------------------------------------*/
 /*- top-left, top-right, center, bottom-left, bottom-right -*/
 /*----------------------------------------------------------*/
-/* Set text font size */
-.body {
-    margin-top:    10px;
-    margin-botton: 10px;
-    margin-left:   10px;
-    margin-right:  10px;
+h1 {
+	font-size:          3.6vw;     /* Make H1 font size scaleable at 3.6 percent viewport width */
+}
+#body {
+	height:             auto;
+	margin:             10px;
+	padding:            1px;
+	border:             1px solid black;
+	text-overflow:      ellipsis;
+	overflow:           hidden;
+	background-image:   url("../backgrounds/20.jpg"); 
+	background-size:    cover; 
+	background-repeat:  no-repeat; 
+	
+}
+#siteid {
+    font-size: 1.50em;
 }
 .siteheader {
     font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
 	font-size:     1.25em;
-    color: #ffff00;
-    
+    color:         #ffff00;
     margin-top:    10px;
     margin-botton: 10px;
     margin-left:   10px;
@@ -25,142 +35,94 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 }
 
 .siteheader {
-    position: relative;
-    text-align: center;
+    position:       relative;
+    text-align:     center;
 }
 
 /* Bottom left text */
 .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+    position:       absolute;
+    bottom:         8px;
+    left:           16px;
 }
 
 /* Top left text */
 .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
+    position:       absolute;
+    top:            8px;
+    left:           16px;
 }
 
 /* Top right text */
 .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
+    position:       absolute;
+    top:            8px;
+    right:          16px;
 }
 
 /* Bottom right text */
 .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-    color: white;
+    position:       absolute;
+    bottom:         8px;
+    right:          16px;
+    color:          white;
 }
 
 .bottom-right {	
-	font-size: 10px;                  /* override smaller font size */
+	font-size:      10px;                  /* override smaller font size */
 }
 
 /* Centered text */
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position:       absolute;
+    top:            50%;
+    left:           50%;
+    transform:      translate(-50%, -50%);
 }
 /*------------------------------------------*/
 /*- CSS to place text on an image - (Ends) -*/
 /*------------------------------------------*/
-#body {
-	height:        auto;
-	margin: 	   10px;
-	padding:       1px;
-	border:        1px solid black;
-	text-overflow: ellipsis;
-	overflow:      hidden;
-	background-image: url("../backgrounds/20.jpg"); 
-	background-size: cover; 
-	background-repeat: no-repeat; 
-	
-}
+
 main {
-    font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
-	font-size: 18px;
-    color: #222;
-    background-color: #e9e9e9;    
+    font-family:        'Lato', sans-serif;  /* use Lato Font for all main sections */
+	font-size:          18px;
+    color:              #222;
+    background-color:   #e9e9e9;    
     
-	margin-left:  10px;
-	margin-right: 10px;
-    margin-top:  10px;
-	margin-bottom: 10px;
-}
-main ul li {
-	margin-bottom: 5px;   /* increase spacing between unordered list items */ 
-}
-h1 {
-	font-size: 3.6vw;     /* Make H1 font size scaleable at 3.6 percent viewport width */
-}
-#pic1 {
-	float: left;
-	width:         98%;
-	height:        25%;
-	margin-top:	   10px;
-	margin-bottom: 10px;
-	margin-left:   10px;
-	padding:       0;
-	border:        1px solid black;
-}
-figcaption {
-	clear: left;
-    text-align: center;
-	margin-left: 10px;
-	padding-left: 0px;
-	font-size: .85em;
-	font-weight: bold;
-}
-p {
-	margin-left: 10px;
-}
-#youtube {
-	width:         50%;
-	height:        30%;
-	margin-top:    10px;
-	margin-bottom: 10px;
-	margin-left:   10px;
-	margin-right:  10px;
-	border:        1px solid black;
-	padding:       2px;
+	margin-left:        10px;
+	margin-right:       10px;
+    margin-top:         10px;
+	margin-bottom:      10px;
 }
 
-#youtube-caption {
-	font-family: 'Lato', sans-serif;
-	font-size: 18px;
-    
-	margin-top:	    10px;
-	margin-bottom: 10px;
-	padding-left:  25px;
+main ul li {   
+	margin-bottom:      5px;       /* increase spacing between unordered list items */ 
 }
+
+p {
+	margin-left:    10px;
+}
+
 footer {
-	clear: left;
-    font-family: 'Lato', sans-serif;  /* use Lato Font for footer section too */
-	font-size: 10px;                  /* smaller font size */
+	clear:          left;
+    font-family:    'Lato', sans-serif;  /* use Lato Font for footer section too */
+	font-size:      10px;                /* smaller font size */
     
-	margin-top: 10px;
-	text-align: center;               /* centered too */
+	margin-top:     10px;
+	text-align:     center;              /* centered too */
 }
 /*-----------------------------------------------------*/
 /*-    Accommodations for Devices 480px and Greater   -*/
 /*-----------------------------------------------------*/
 @media only screen and (min-width: 480px) {
-
+ 
     .siteheader {
-        font-family: 'Lato', sans-serif;  /* use Lato Font for all main sections */
-        font-size:     2em;
+        font-size:  2em;
     }
-
+    #siteid{
+        font-size:  2.25em;
+    }
 }
 /*-----------------------------------------*/
 /*- End Accommodations for Laeger Devices -*/
 /*-----------------------------------------*/
-
